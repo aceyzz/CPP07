@@ -5,14 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: cedmulle <cedmulle@student.42lsaunne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/04 18:23:23 by cedmulle          #+#    #+#             */
-/*   Updated: 2024/03/04 18:32:23 by cedmulle         ###   ########.ch       */
+/*   Created: 2024/03/04 18:47:44 by cedmulle          #+#    #+#             */
+/*   Updated: 2024/03/04 18:47:44 by cedmulle         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "colors.hpp"
 #include "iter.hpp"
 #include <string>
+#include <vector>
 
 template <typename T1>
 void	printer(T1 const &value)
@@ -29,6 +30,7 @@ int	main(void)
 	bool		bolArray[] = {true, false};
 	char		chrArray[] = {'a', 'b', 'c', 'd', 'e'};
 	std::string	strArray[] = {"string1", "string2", "string3"};
+	std::vector<int> vec;
 
 	std::cout << GRY1 "  ITER WITH INT ARRAY" << std::endl;
 	std::cout << "****************************************" CYAN << std::endl << "|  ";
@@ -53,6 +55,13 @@ int	main(void)
 	std::cout << GRY1 "  ITER WITH STRING ARRAY" << std::endl;
 	std::cout << "****************************************" PURP << std::endl << "|  ";
 	iter(strArray, 3, printer);
+	std::cout << RST << std::endl << std::endl;
+
+	std::cout << GRY1 "  ITER WITH VECTOR ARRAY" << std::endl;
+	std::cout << "****************************************" ORNG << std::endl << "|  ";
+	for (int i = 0; i < 5; i++)
+		vec.push_back((i + 1) * 2);
+	iter(&vec[0], vec.size(), printer);
 	std::cout << RST << std::endl << std::endl;
 
 	return (0);

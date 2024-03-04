@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: cedmulle <cedmulle@student.42lsaunne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/03 22:32:51 by cedmulle          #+#    #+#             */
-/*   Updated: 2024/03/03 22:33:02 by cedmulle         ###   ########.ch       */
+/*   Created: 2024/03/04 18:48:09 by cedmulle          #+#    #+#             */
+/*   Updated: 2024/03/04 18:48:09 by cedmulle         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 # define REDD "\033[0;38;2;255;0;0m"       // Rouge
 # define RED1 "\033[0;38;2;210;10;10m"       // Rouge
-# define ORNG "\033[0;38;2;205;105;0m"     // Orange
-# define GOLD "\033[0;38;2;255;215;0m"     // Or
+# define ORNG "\033[0;38;2;255;145;0m"     // Orange
+# define GOLD "\033[0;38;2;255;215;10m"     // Or
 # define YLLW "\033[0;38;2;255;255;0m"     // Jaune
 # define GRNN "\033[0;38;2;0;128;0m"       // Vert foncé
 # define LIME "\033[0;38;2;0;255;0m"       // Vert lime
