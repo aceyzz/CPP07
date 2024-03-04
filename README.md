@@ -106,3 +106,8 @@ Développer un modèle de classe `Array` qui contient des éléments de type `T`
 - **Utilisation avec types complexes** : Démonstration de l'utilisation de `Array` avec des `std::string`, illustrant sa capacité à gérer des types plus complexes que les types primitifs.
 
 Cette implémentation démontre la polyvalence et la sécurité du modèle de classe `Array`, offrant une gestion fine des tableaux dynamiques avec la garantie d'une manipulation sécurisée et d'une indépendance des copies.
+
+<br>
+
+---
+
