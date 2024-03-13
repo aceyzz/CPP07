@@ -3,7 +3,10 @@
 <br>
 
 
-## Sujet : Exercice 00 - "Start with a few functions"
+## Exercice 00 - "Start with a few functions"
+
+<details>
+  <summary>Afficher/Masquer</summary>
 
 #### Objectif :
 L'objectif est d'implémenter les modèles de fonction suivants qui peuvent être appelés avec n'importe quel type d'argument, à condition que les deux arguments aient le même type et prennent en charge tous les opérateurs de comparaison :
@@ -36,13 +39,18 @@ Des tests sont réalisés pour démontrer la flexibilité de ces fonctions avec 
 
 Ces tests montrent que les fonctions `swap`, `min`, et `max` fonctionnent correctement avec divers types, démontrant l'efficacité et la polyvalence des modèles de fonction en C++.
 
+</details>
+
 <br>
 
 ---
 
 <br>
 
-## Sujet : Exercice 01 - "Iter"
+## Exercice 01 - "Iter"
+
+<details>
+  <summary>Afficher/Masquer</summary>
 
 #### Objectif :
 L'objectif est d'implémenter le modèle de fonction `iter` qui prend 3 paramètres et ne renvoie rien :
@@ -72,6 +80,7 @@ Des tests sont effectués avec différents types de tableaux pour démontrer l'u
 
 Ces tests confirment que la fonction `iter` est bien conçue pour être réutilisée avec une grande variété de types de données et d'actions, soulignant la puissance et la flexibilité des modèles en C++.
 
+</details>
 
 <br>
 
@@ -79,7 +88,10 @@ Ces tests confirment que la fonction `iter` est bien conçue pour être réutili
 
 <br>
 
-### Sujet : Exercice 02 - "Array"
+### Exercice 02 - "Array"
+
+<details>
+  <summary>Afficher/Masquer</summary>
 
 #### Objectif :
 Développer un modèle de classe `Array` qui contient des éléments de type `T` et qui implémente les comportements et fonctions suivants :
@@ -106,6 +118,8 @@ Développer un modèle de classe `Array` qui contient des éléments de type `T`
 - **Utilisation avec types complexes** : Démonstration de l'utilisation de `Array` avec des `std::string`, illustrant sa capacité à gérer des types plus complexes que les types primitifs.
 
 Cette implémentation démontre la polyvalence et la sécurité du modèle de classe `Array`, offrant une gestion fine des tableaux dynamiques avec la garantie d'une manipulation sécurisée et d'une indépendance des copies.
+
+</details>
 
 <br>
 
