@@ -1,7 +1,13 @@
-<img src="utils/CPP07.png" width= 100%>
+<img src="git_utils/banner.png" width= 100%>
 
 <br>
 
+---
+
+<br>
+
+<details>
+<summary>FRENCH VERSION</summary>
 
 ## Exercice 00 - "Start with a few functions"
 
@@ -123,5 +129,135 @@ Cette implémentation démontre la polyvalence et la sécurité du modèle de cl
 
 <br>
 
+</details>
+
+<br>
+
 ---
 
+<br>
+
+<details>
+<summary>ENGLISH VERSION</summary>
+
+## Exercise 00 - "Start with a few functions"
+
+<details>
+	<summary>Show/Hide</summary>
+
+#### Objective:
+The goal is to implement the following function templates that can be called with any type of argument, provided both arguments are of the same type and support all comparison operators:
+- `swap`: Swaps the values of two given arguments. Does not return anything.
+- `min`: Compares the two values passed as arguments and returns the smaller one. If both are equal, returns the second.
+- `max`: Compares the two values passed as arguments and returns the larger one. If both are equal, returns the second.
+
+These functions must be defined in header files.
+
+### My Implementation:
+
+[Link here](https://github.com/aceyzz/CPP07/tree/main/ex00)
+
+- **Function `swap`**: Swaps the values of two arguments of any type that supports assignment.
+
+- **Function `min`**: Returns the smaller of the two values passed as arguments, or the second if they are equal.
+
+- **Function `max`**: Returns the larger of the two values passed as arguments, or the second if they are equal.
+
+The function templates are implemented to work with any type of argument as long as they can be compared and assigned. This includes built-in types like `int`, `float`, `double`, as well as complex types like `std::string`.
+
+#### Tests:
+Tests are conducted to demonstrate the flexibility of these functions with different types:
+- Integers, to test basic operations.
+- Floats, to verify the precision of comparisons and swaps.
+- Doubles, to evaluate large-scale comparisons and conversions.
+- Characters, to test swaps and comparisons of ASCII values.
+- Strings (`std::string`), to test operations on complex types.
+- Booleans, to evaluate logical swaps and comparisons.
+
+These tests show that the `swap`, `min`, and `max` functions work correctly with various types, demonstrating the efficiency and versatility of function templates in C++.
+
+</details>
+
+<br>
+
+---
+
+<br>
+
+## Exercise 01 - "Iter"
+
+<details>
+	<summary>Show/Hide</summary>
+
+#### Objective:
+The goal is to implement the `iter` function template that takes 3 parameters and does not return anything:
+- The first parameter is the address of an array.
+- The second is the length of the array.
+- The third is a function that will be called on each element of the array.
+
+Your `iter` function must work with any type of array. The third parameter can be an instantiated function template.
+
+### My Implementation:
+
+[Link here](https://github.com/aceyzz/CPP07/tree/main/ex01)
+
+- **Function `iter`**: This function template iterates over each element of an array, applying a given function to each element. This implementation supports any type of array element, as long as it can be passed to the provided function as the third argument.
+
+- **Function `printer`**: A template function used as an example of a function that can be passed to `iter`. It simply prints the value of the element it is called on, demonstrating the flexibility of `iter` to work with different actions.
+
+#### Tests:
+
+Tests are conducted with different types of arrays to demonstrate the universality and flexibility of the `iter` function:
+- **Integer arrays (`int`)**: To test iteration and function application on simple types.
+- **Floating-point arrays (`double`)**: To evaluate behavior with floating-point types.
+- **Boolean arrays (`bool`)**: To verify manipulation of logical types.
+- **Character arrays (`char`)**: To test with character types and simple string manipulations.
+- **String arrays (`std::string`)**: To demonstrate iteration on complex types representing sequences of characters.
+- **Integer vectors (`std::vector<int>`)**: Although not explicitly mentioned in the subject, this test illustrates the use of `iter` with a standard library container, showing its compatibility beyond primitive arrays.
+
+These tests confirm that the `iter` function is well-designed to be reused with a wide variety of data types and actions, highlighting the power and flexibility of templates in C++.
+
+</details>
+
+<br>
+
+---
+
+<br>
+
+### Exercise 02 - "Array"
+
+<details>
+	<summary>Show/Hide</summary>
+
+#### Objective:
+Develop a class template `Array` that contains elements of type `T` and implements the following behaviors and functions:
+- **Default constructor**: Creates an empty array.
+- **Constructor with an `unsigned int n` parameter**: Creates an array of `n` elements initialized by default.
+- **Copy constructor and assignment operator**: In both cases, modifying the original array or its copy after copying should not affect the other array.
+- **Use of `new[]` for memory allocation**: Preventive allocation is prohibited. The program must never access unallocated memory.
+- **Access to elements via the subscription operator `[ ]`**: If its index is out of bounds, a `std::exception` is thrown.
+- **Member function `size()`**: Returns the number of elements in the array without modifying the current instance.
+
+### My Implementation:
+
+[Link here](https://github.com/aceyzz/CPP07/tree/main/ex02)
+
+- **Class `Array`**: This class template supports dynamic allocation of an array of elements of type `T`, deep copy management to avoid side effects between copies, and secure access control to elements via the `[ ]` operator.
+
+- **Exception handling**: Implementation of a custom exception `OutOfBoundsException` to handle out-of-bounds access cases, enhancing the robustness of the class.
+
+#### Tests:
+
+- **Variable-sized arrays**: Creation of arrays with different sizes and types to test the flexibility of the `Array` class template.
+- **Constructor tests**: Validation of data separation between instances via copy constructors and the assignment operator to ensure independence of copies.
+- **Secure access and exceptions**: Attempts to access out-of-bounds indices to demonstrate effective exception handling and access security.
+- **Usage with complex types**: Demonstration of the use of `Array` with `std::string`, illustrating its ability to handle more complex types than primitive types.
+
+This implementation demonstrates the versatility and safety of the `Array` class template, offering fine-grained management of dynamic arrays with the guarantee of secure manipulation and independence of copies.
+
+</details>
+
+<br>
+
+</details>
